@@ -1,6 +1,6 @@
 -- You probably always want to set this in your vim file
 vim.opt.background = 'dark'
-vim.g.colors_name = 'pywal-theme'
+vim.g.colors_name = 'pywal_theme'
 
 -- By setting our module to nil, we clear lua's cache,
 -- which means the require ahead will *always* occur.
@@ -14,7 +14,7 @@ vim.g.colors_name = 'pywal-theme'
 --
 -- The performance impact of this call can be measured in the hundreds of
 -- *nanoseconds* and such could be considered "production safe".
-package.loaded['pywal-theme.pywal-theme'] = nil
+package.loaded['lush_theme.pywal_theme'] = nil
 
 -- include our theme file and pass it to lush to apply
-require('lush')(require('pywal-theme.pywal-theme'))
+require('lush')(require('lush_theme.pywal_theme'))
