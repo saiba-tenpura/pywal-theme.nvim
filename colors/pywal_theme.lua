@@ -2,6 +2,9 @@
 vim.opt.background = 'dark'
 vim.g.colors_name = 'pywal_theme'
 
+-- Enable terminal true-color support
+vim.opt.termguicolors = true
+
 -- By setting our module to nil, we clear lua's cache,
 -- which means the require ahead will *always* occur.
 --
