@@ -22,8 +22,8 @@ local theme = lush(function(injected_functions)
     -- Cursor       { }, -- Character under the cursor
     -- lCursor      { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
     -- CursorIM     { }, -- Like Cursor, but used when in IME mode |CursorIM|
-    -- CursorColumn { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    -- CursorLine   { }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorColumn { bg = colors.background.lighten(5), }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
+    CursorLine   { bg = colors.background.lighten(5), }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory    { fg = colors.cyan, }, -- Directory names (and other special names in listings)
     DiffAdd      { fg = colors.red, }, -- Diff mode: Added line |diff.txt|
     DiffChange   { fg = colors.magenta, }, -- Diff mode: Changed line |diff.txt|
@@ -33,14 +33,14 @@ local theme = lush(function(injected_functions)
     -- TermCursor   { }, -- Cursor in a focused terminal
     -- TermCursorNC { }, -- Cursor in an unfocused terminal
     ErrorMsg     { fg = colors.white, bg = colors.red, }, -- Error messages on the command line
-    VertSplit    { fg = colors.background.lighten(10), bg = colors.background, }, -- Column separating vertically split windows
+    VertSplit    { fg = colors.background.lighten(5), bg = colors.background, }, -- Column separating vertically split windows
     Folded       { fg = colors.light_cyan, bg = colors.gray.darken(30), }, -- Line used for closed folds
     FoldColumn   { fg = colors.cyan, bg = colors.gray.darken(30), }, -- 'foldcolumn'
     SignColumn   { Normal }, -- Column where |signs| are displayed
     IncSearch    { Normal, gui = 'reverse', }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     -- Substitute   { }, -- |:substitute| replacement text highlighting
     LineNr       { fg = colors.light_yellow, }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-    CursorLineNr { fg = colors.light_yellow, gui = 'bold', }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    CursorLineNr { fg = colors.light_yellow, bg = colors.background.lighten(3), gui = 'bold', }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     MatchParen   { fg = colors.foreground, bg = colors.cyan, }, -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg      { fg = colors.blue , gui = 'bold', }, -- 'showmode' message (e.g., "-- INSERT -- ")
     -- MsgArea      { }, -- Area for messages and cmdline
