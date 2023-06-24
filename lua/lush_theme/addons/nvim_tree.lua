@@ -4,13 +4,13 @@ local colors = require('lush_theme.colors')
 local spec = lush(function()
   return {
     -- NvimTree highlight groups
-    -- NvimTreeNormal           {},
+    NvimTreeNormal           { bg = colors.background.lighten(3), },
     -- NvimTreeNormalFloat      {},
-    -- NvimTreeEndOfBuffer      {}, 
+    NvimTreeEndOfBuffer      { bg = colors.background.lighten(3), },
     -- NvimTreeCursorLine       {}, 
     -- NvimTreeCursorLineNr     {}, 
     -- NvimTreeLineNr           {}, 
-    -- NvimTreeWinSeparator     {},
+    NvimTreeWinSeparator     { fg = colors.background.lighten(3), bg = colors.background.lighten(3), },
     -- NvimTreeCursorColumn     {}, 
     -- NvimTreeSymLink          {},
     -- NvimTreeSymLinkIcon      {},

@@ -22,6 +22,3 @@ for addon,enabled in pairs(config.addons) do
 end
 
 return spec
-
--- local addons = require('lush_theme.addons.nvim-cmp')
--- return lush.merge({base, addons})
