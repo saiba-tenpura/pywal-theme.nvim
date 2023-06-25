@@ -5,6 +5,7 @@ local config = {
   addons = {
     nvim_cmp = true,
     nvim_tree = true,
+    telescope = true,
   }
 }
 
