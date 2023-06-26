@@ -7,9 +7,9 @@ local spec = lush(function()
     TelescopeBorder         { fg = colors.gray, },
     TelescopeMatching       { fg = colors.yellow, },
     -- TelescopeMultiSelector  {},
-    -- TelescopePromptBorder   {},
-    -- TelescopePromptCounter  {},
-    -- TelescopeSelection      {},
+    TelescopePromptBorder   { fg = colors.gray, },
+    TelescopePromptCounter  { fg = colors.gray, },
+    TelescopeSelection      { bg = colors.background.lighten(3), },
     -- TelescopeSelectionCaret {},
 }
 end)
