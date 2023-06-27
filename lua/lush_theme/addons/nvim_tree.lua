@@ -43,7 +43,7 @@ local spec = lush(function()
     -- NvimTreeGitNew           {},
     -- NvimTreeGitDeleted       {},
     -- NvimTreeGitIgnored       {},
-}
+  }
 end)
 
 return spec

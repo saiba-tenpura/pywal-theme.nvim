@@ -6,6 +6,7 @@ local config = {
     nvim_cmp = true,
     nvim_tree = true,
     telescope = true,
+    treesitter = true,
   }
 }
 

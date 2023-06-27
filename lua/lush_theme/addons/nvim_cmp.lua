@@ -3,7 +3,7 @@ local colors = require('lush_theme.colors')
 
 local spec = lush(function()
   return {
-    -- CMP syntax groups.
+    -- CMP syntax groups
     CmpItemAbbrDeprecated { fg = colors.gray, gui = 'strikethrough', },
     CmpItemAbbrMatch      { fg = colors.yellow, },
     CmpItemAbbrMatchFuzzy { CmpItemAbbrMatch, },
@@ -15,7 +15,7 @@ local spec = lush(function()
     CmpItemKindKeyword    { fg = colors.cyan, },
     CmpItemKindProperty   { CmpItemKindKeyword, },
     CmpItemKindUnit       { CmpItemKindKeyword, },
-}
+  }
 end)
 
 return spec

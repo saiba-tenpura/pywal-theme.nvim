@@ -11,7 +11,7 @@ local spec = lush(function()
     TelescopePromptCounter  { fg = colors.gray, },
     TelescopeSelection      { bg = colors.background.lighten(3), },
     -- TelescopeSelectionCaret {},
-}
+  }
 end)
 
 return spec
