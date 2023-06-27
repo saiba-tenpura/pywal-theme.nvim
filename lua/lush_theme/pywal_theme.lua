@@ -3,6 +3,7 @@ local spec = require('lush_theme.base')
 
 local config = {
   addons = {
+    gitsigns = true,
     nvim_cmp = true,
     nvim_tree = true,
     telescope = true,
