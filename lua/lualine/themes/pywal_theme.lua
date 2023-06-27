@@ -13,7 +13,7 @@ local colors = {
 
 return {
    normal = {
-    a = {bg = colors.yellow, fg = colors.black, gui = 'bold'},
+    a = {bg = colors.green, fg = colors.black, gui = 'bold'},
     b = {bg = colors.background, fg = colors.white},
     c = {bg = colors.background, fg = colors.white}
   },
@@ -23,7 +23,7 @@ return {
     c = {bg = colors.background, fg = colors.white}
   },
   visual = {
-    a = {bg = colors.green, fg = colors.black, gui = 'bold'},
+    a = {bg = colors.yellow, fg = colors.black, gui = 'bold'},
     b = {bg = colors.background, fg = colors.white},
     c = {bg = colors.background, fg = colors.white}
   },
