@@ -60,8 +60,8 @@ local theme = lush(function()
     SpellCap     { fg = Normal.fg, bg = colors.light_blue, gui = 'undercurl', }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     SpellLocal   { fg = Normal.fg, bg = colors.light_cyan, gui = 'undercurl', }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare    { fg = Normal.fg, bg = colors.light_magenta, gui = 'undercurl', }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-    StatusLine   { Normal, gui = 'bold, reverse', }, -- Status line of current window
-    StatusLineNC { Normal, gui = 'reverse', }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+    StatusLine   { bg = colors.background.lighten(3), gui = 'bold', }, -- Status line of current window
+    StatusLineNC { bg = colors.background.lighten(3), }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine      { fg = colors.white, bg = colors.gray.darken(30), gui = 'underline', }, -- Tab pages line, not active tab page label
     TabLineFill  { Normal, gui = 'reverse', }, -- Tab pages line, where there are no labels
     TabLineSel   { Normal, gui = 'bold', }, -- Tab pages line, active tab page label
