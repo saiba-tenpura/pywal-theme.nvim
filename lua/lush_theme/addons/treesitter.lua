@@ -2,7 +2,7 @@ local lush = require('lush')
 local colors = require('lush_theme.colors')
 
 local spec = lush(function(injected_functions)
-  --  local sym = injected_functions.sym
+  local sym = injected_functions.sym
   return {
     -- Tree-Sitter syntax groups
 
@@ -39,7 +39,7 @@ local spec = lush(function(injected_functions)
     -- sym("@method")            { }, -- Function
     -- sym("@field")             { }, -- Identifier
     -- sym("@property")          { }, -- Identifier
-    -- sym("@constructor")       { }, -- Special
+    sym("@constructor")       { fg = colors.light_yellow, },
     -- sym("@conditional")       { }, -- Conditional
     -- sym("@repeat")            { }, -- Repeat
     -- sym("@label")             { }, -- Label
@@ -55,7 +55,8 @@ local spec = lush(function(injected_functions)
     -- sym("@include")           { }, -- Include
     -- sym("@preproc")           { }, -- PreProc
     -- sym("@debug")             { }, -- Debug
-    -- sym("@tag")               { }, -- Tag
+    sym("@tag")               { fg = colors.light_yellow, gui = 'bold', },
+    sym("@tag.attribute")     { fg = colors.light_cyan, },
   }
 end)
 
