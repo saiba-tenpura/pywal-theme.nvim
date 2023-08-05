@@ -1,4 +1,4 @@
-local lush_colors = require('lush_theme.colors')
+local lush_colors = require('lush-theme.colors')
 
 local colors = {
   background = lush_colors.background.lighten(3).hex,

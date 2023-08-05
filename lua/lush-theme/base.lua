@@ -1,5 +1,5 @@
 local lush = require('lush')
-local colors = require('lush_theme.colors')
+local colors = require('lush-theme.colors')
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.

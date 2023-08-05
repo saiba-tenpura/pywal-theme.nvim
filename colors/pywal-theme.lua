@@ -1,6 +1,6 @@
 -- You probably always want to set this in your vim file
 vim.opt.background = 'dark'
-vim.g.colors_name = 'pywal_theme'
+vim.g.colors_name = 'pywal-theme'
 
 -- Enable terminal true-color support
 vim.opt.termguicolors = true
@@ -17,7 +17,7 @@ vim.opt.termguicolors = true
 --
 -- The performance impact of this call can be measured in the hundreds of
 -- *nanoseconds* and such could be considered "production safe".
-package.loaded['lush_theme.pywal_theme'] = nil
+package.loaded['lush-theme.pywal-theme'] = nil
 
 -- include our theme file and pass it to lush to apply
-require('lush')(require('lush_theme.pywal_theme'))
+require('lush')(require('lush-theme.pywal-theme'))

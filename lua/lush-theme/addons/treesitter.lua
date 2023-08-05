@@ -1,5 +1,5 @@
 local lush = require('lush')
-local colors = require('lush_theme.colors')
+local colors = require('lush-theme.colors')
 
 local spec = lush(function(injected_functions)
   local sym = injected_functions.sym

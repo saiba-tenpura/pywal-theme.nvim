@@ -1,5 +1,5 @@
 local lush = require('lush')
-local spec = require('lush_theme.base')
+local spec = require('lush-theme.base')
 
 local config = {
   addons = {
@@ -13,7 +13,7 @@ local config = {
 
 for addon,enabled in pairs(config.addons) do
   if enabled then
-    local modname = 'lush_theme.addons.' .. addon
+    local modname = 'lush-theme.addons.' .. addon
     package.loaded[modname] = nil
     local module_exists, addon_module = pcall(require, modname)
     if module_exists then
