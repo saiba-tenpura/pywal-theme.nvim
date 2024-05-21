@@ -46,7 +46,8 @@ local theme = lush(function()
     -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg      { fg = '#87ffaf', gui = 'bold', }, -- |more-prompt|
     NonText      { fg = colors.light_blue, bg = colors.background, }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
-    -- NormalFloat  { }, -- Normal text in floating windows.
+    NormalFloat  { bg = colors.background.darken(10), }, -- Normal text in floating windows.
+    FloatBorder  { fg = colors.gray, }, -- Border of floating windows.
     -- NormalNC     { }, -- normal text in non-current windows
     Pmenu        { fg = colors.white, bg = colors.background.lighten(3), }, -- Popup menu: Normal item.
     PmenuSel     { fg = colors.foreground.darken(30), bg = colors.background, }, -- Popup menu: Selected item.

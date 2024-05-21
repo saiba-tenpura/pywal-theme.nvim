@@ -6,7 +6,7 @@ local spec = lush(function()
     -- Telescope highlight groups
     TelescopeBorder         { fg = colors.gray, },
     TelescopeMatching       { fg = colors.yellow, },
-    -- TelescopeMultiSelector  {},
+    -- TelescopeMultiSelection  {},
     TelescopePromptBorder   { fg = colors.gray, },
     TelescopePromptCounter  { fg = colors.gray, },
     TelescopeSelection      { bg = colors.background.lighten(3), },
