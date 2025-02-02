@@ -3,12 +3,13 @@ local spec = require('lush-theme.base')
 
 local config = {
   addons = {
+    avante = true,
     gitsigns = true,
     nvim_cmp = true,
     nvim_tree = true,
     telescope = true,
     treesitter = true,
-  }
+  },
 }
 
 for addon,enabled in pairs(config.addons) do
