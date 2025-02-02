@@ -71,7 +71,7 @@ local theme = lush(function()
     -- VisualNOS    { }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg   { fg = colors.red, }, -- Warning messages
     -- Whitespace   { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
-    -- Winseparator { }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
+    Winseparator { fg = colors.background.lighten(5), bg = colors.background, }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
     WildMenu     { fg = colors.background, bg = colors.light_yellow, }, -- Current match in 'wildmenu' completion
 
     -- Common vim syntax groups used for all kinds of code and markup.
