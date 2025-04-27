@@ -4,6 +4,7 @@ local spec = require('lush-theme.base')
 local config = {
   addons = {
     avante = true,
+    bufferline = true,
     gitsigns = true,
     nvim_cmp = true,
     nvim_tree = true,

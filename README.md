@@ -28,6 +28,7 @@ vim.cmd([[colorscheme pywal-theme]])
 
 ## Supported Plugins
 * Avante
+* Bufferline
 * Gitsigns
 * Lualine
 * Nvim CMP
