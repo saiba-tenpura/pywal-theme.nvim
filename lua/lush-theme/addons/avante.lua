@@ -3,6 +3,7 @@ local colors = require('lush-theme.colors')
 
 local spec = lush(function()
   return {
+    -- Avante highlight groups
     AvanteTitle                 { fg = colors.background.lighten(25), bg = colors.yellow, gui = 'bold', }, -- Title
     AvanteReversedTitle         { fg = colors.yellow, }, -- Used for rounded border
     AvanteSubtitle              { fg = colors.background.lighten(25), bg = colors.cyan, gui = 'bold', }, -- Selected code title
